@@ -1,0 +1,35 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 01-20-2021
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+  Modifications Log 
+  Ver   Date         Author                               Modification
+  1.0   01-20-2021   ChangeMeIn@UserSettingsUnder.SFDoc   Initial Version
+-->
+<template>
+    <table class="slds-table slds-table_cell-buffer slds-table_header-hidden">
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+        </tr>
+        <template for:each={contacts.data} for:item="items">
+            <tr key={items.Id}>
+                <td>
+                    {items.LastName}
+                </td>
+                <td>
+                    {items.Email}
+                </td>
+                <td>
+                    {items.Phone}
+                </td>
+         
+            </tr>
+
+        </template>
+    </table>
+ 
+</template>
